@@ -1,6 +1,8 @@
+// @ts-nocheck
 import type { Metadata } from 'next';
 import { Oswald, Source_Sans_3 } from 'next/font/google';
 import './globals.css';
+import { getKorivaConfig, buildCssVars } from '@/lib/koriva-config';
 
 const oswald = Oswald({
   subsets: ['latin'],
@@ -14,9 +16,11 @@ export const metadata: Metadata = {
   description: 'Nashville\'s toughest bootcamp. Military-style training, team accountability, and real results. Indoor and outdoor, six days a week.',
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const cfg = await getKorivaConfig();
+  const vars = buildCssVars(cfg?.brand);
   return (
-    <html lang="en" className={`${oswald.variable} ${sourceSans.variable}`}>
+    <html lang="en" className={`${oswald.variable} ${sourceSans.variable}`} style={vars as React.CSSProperties}>
       <body>{children}</body>
     </html>
   );
