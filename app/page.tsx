@@ -369,12 +369,12 @@ export default function GritPage() {
             <h1 data-cg-el="hero_headline_1" className="gr-hero-title">
               No<br /><span>Shortcuts.</span>
             </h1>
-            <p className="gr-hero-sub">
+            <p data-cg-el="hero_subtitle" className="gr-hero-sub">
               Military-inspired bootcamp training that builds more than muscle. Strength, conditioning, and the kind of mental toughness that changes everything outside the gym too.
             </p>
             <div className="gr-hero-actions">
-              <a href="#pricing" className="gr-btn-primary">Join Rookie Camp</a>
-              <a href="#classes" className="gr-btn-ghost">View Schedule</a>
+              <a data-cg-el="hero_cta_primary" href="#pricing" className="gr-btn-primary">Join Rookie Camp</a>
+              <a data-cg-el="hero_cta_secondary" href="#classes" className="gr-btn-ghost">View Schedule</a>
             </div>
           </div>
 
