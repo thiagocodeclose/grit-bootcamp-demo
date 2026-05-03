@@ -366,7 +366,7 @@ export default function GritPage() {
         <div className="gr-hero-inner">
           <div className="gr-hero-copy">
             <div className="gr-hero-tag">Nashville, TN — Est. 2018</div>
-            <h1 className="gr-hero-title">
+            <h1 data-cg-el="hero_headline_1" className="gr-hero-title">
               No<br /><span>Shortcuts.</span>
             </h1>
             <p className="gr-hero-sub">
