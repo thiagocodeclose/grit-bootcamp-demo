@@ -531,7 +531,7 @@ export default function GritPage() {
         </div>
         <div className="gr-footer-bottom">
           <span>© {new Date().getFullYear()} GRIT Bootcamp. All rights reserved.</span>
-          <span>Powered by <a href="https://koriva.com" className="gr-footer-brand">Koriva</a></span>
+          <span>Powered by <a href="https://garrison365.com" className="gr-footer-brand">Garrison365</a></span>
         </div>
       </footer>
     </>
